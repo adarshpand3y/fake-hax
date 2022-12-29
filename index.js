@@ -3,7 +3,10 @@ const app = express();
 const path = require('path');
 const io = require('socket.io')(8000, {
     cors: {
-        origin: ['http://localhost:3000']
+        origin: [
+            'http://localhost:3000',
+            '*'
+        ]
     }
 });
 const PORT = 3000;
