@@ -5,7 +5,9 @@ const io = require('socket.io')(8000, {
     cors: {
         origin: [
             'http://localhost:3000',
-            '*'
+            'http://localhost:8000',
+            'https://testing-rw.up.railway.app:8000/',
+            '*',
         ]
     }
 });

@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000');
+const socket = io('https://testing-rw.up.railway.app:8000/' || 'http://localhost:8000');
 
 const makeid = (length) => {
     var result = '';
